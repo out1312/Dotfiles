@@ -2,6 +2,8 @@
 # ~/.bash_profile
 #
 
+export PATH="$PATH:/home/out1312/.cargo/bin"
+
 start_menu() {
   while true; do
     echo "Elixe unha opción:"

@@ -64,7 +64,7 @@ return {
   },
 
   {
-    'rcarriga/nvim-dap-ui', 
+    'rcarriga/nvim-dap-ui',
     dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"},
     config = function()
 			require("dapui").setup()
@@ -91,6 +91,10 @@ return {
     'dgagn/diagflow.nvim',
     -- event = 'LspAttach', -- This is what I use personnally and it works great
     opts = {}
+  },
+  { "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
   },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",

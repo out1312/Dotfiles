@@ -33,6 +33,8 @@ require "options"
 require "nvchad.autocmds"
 require('diagflow').setup()
 
+vim.cmd.colorscheme "catppuccin"
+
 vim.schedule(function()
   require "mappings"
 end)
