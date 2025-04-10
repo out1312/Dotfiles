@@ -33,7 +33,7 @@ $time\
 # and use the os module below
 [username]
 show_always = true
-style_user = "bg:#C53F34"
+style_user = "fg:#000000 bg:#C53F34"
 style_root = "bg:#C53F34"
 format = '[$user ]($style)'
 disabled = false
@@ -85,11 +85,11 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#C53F34"
+style = "fg:#000000 bg:#C53F34"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#C53F34"
+style = "fg:#000000 bg:#C53F34"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
@@ -139,5 +139,5 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#C53F34"
+style = "fg:#000000 bg:#C53F34"
 format = '[ ♥ $time ]($style)'
