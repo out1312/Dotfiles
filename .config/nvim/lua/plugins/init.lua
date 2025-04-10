@@ -96,6 +96,20 @@ return {
     name = "catppuccin",
     priority = 1000,
   },
+  {
+    "simrat39/rust-tools.nvim",
+    dependencies = { "neovim/nvim-lspconfig" },
+    ft = { "rust" },
+    opts = {
+      server = {
+        on_attach = function(_, bufnr)
+          -- Override <leader>n only for Rust buffers
+          vim.keymap.set("n", "<leader>n", vim.lsp.buf.rename,
+            { buffer = bufnr, desc = "Rename variable" })
+        end,
+      },
+    },
+  },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
