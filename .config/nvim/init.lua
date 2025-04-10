@@ -35,6 +35,8 @@ require('diagflow').setup()
 
 vim.cmd.colorscheme "catppuccin"
 
+vim.wo.relativenumber = true
+
 vim.schedule(function()
   require "mappings"
 end)
