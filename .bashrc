@@ -11,6 +11,8 @@ alias vi='nvim'
 alias v='nvim'
 PS1='[\u@\h \W]\$ '
 
+alias icat='kitty icat'
+
 hyfetch
 
 eval "$(starship init bash)"

@@ -68,7 +68,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ Mod4Mask,                       XK_k,      spawn,          SHCMD("konsole") },
+	{ Mod4Mask,                       XK_k,      spawn,          SHCMD("kitty") },
 	{ Mod4Mask,                       XK_p,      spawn,          SHCMD("librewolf") },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
