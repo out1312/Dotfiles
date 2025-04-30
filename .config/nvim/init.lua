@@ -37,6 +37,8 @@ vim.cmd.colorscheme "catppuccin"
 
 vim.wo.relativenumber = true
 
+vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
+
 vim.schedule(function()
   require "mappings"
 end)
