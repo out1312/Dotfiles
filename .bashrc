@@ -7,8 +7,9 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias vi='nvim'
-alias v='nvim'
+alias v='TERM=st nvim'
+alias vi='TERM=st nvim'
+alias nvim='TERM=st nvim'
 PS1='[\u@\h \W]\$ '
 
 alias icat='kitty icat'
