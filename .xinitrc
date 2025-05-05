@@ -13,4 +13,6 @@ feh --bg-fill /home/out1312/Pictures/TP.jpg
 picom -b --config .config/picom/picom.conf
 dwmblocks &
 
+dunst &
+
 exec dwm
