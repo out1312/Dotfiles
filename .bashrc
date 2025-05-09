@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias sudo='sudo '
 alias v='nvim'
 alias vi='nvim'
 PS1='[\u@\h \W]\$ '
