@@ -43,7 +43,8 @@ vim.schedule(function()
   require "mappings"
 end)
 
-vim.diagnostic.config{virtual_text = false}
+vim.diagnostic.config{virtual_text = true}
+vim.diagnostic.config{underline = true}
 
 local isLspDiagnosticsVisible = true
 vim.keymap.set("n", "<leader><leader>", function()
