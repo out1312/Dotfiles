@@ -10,6 +10,7 @@ alias grep='grep --color=auto'
 alias sudo='sudo '
 alias v='nvim'
 alias vi='nvim'
+alias cat='bat'
 PS1='[\u@\h \W]\$ '
 
 alias icat='kitty icat'
