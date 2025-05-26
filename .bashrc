@@ -11,6 +11,7 @@ alias sudo='sudo '
 alias v='nvim'
 alias vi='nvim'
 alias cat='bat'
+alias wisdom='fortune | cowsay'
 PS1='[\u@\h \W]\$ '
 
 alias icat='kitty icat'
