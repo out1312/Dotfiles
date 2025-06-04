@@ -12,6 +12,7 @@ alias v='nvim'
 alias vi='nvim'
 alias cat='bat'
 alias wisdom='fortune | cowsay'
+alias lw='librewolf '
 PS1='[\u@\h \W]\$ '
 
 alias icat='kitty icat'
