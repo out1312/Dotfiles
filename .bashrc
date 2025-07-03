@@ -13,9 +13,10 @@ alias vi='nvim'
 alias cat='bat'
 alias wisdom='fortune | cowsay'
 alias lw='librewolf '
-PS1='[\u@\h \W]\$ '
-
 alias icat='kitty icat'
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+
+PS1='[\u@\h \W]\$ '
 
 hyfetch
 
