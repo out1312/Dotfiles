@@ -15,4 +15,6 @@ dwmblocks &
 
 dunst &
 
+mpd
+
 exec dwm
