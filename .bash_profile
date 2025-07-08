@@ -5,6 +5,9 @@
 export PATH="$PATH:/home/out1312/.cargo/bin"
 
 start_menu() {
+
+  hyfetch # Engadido aquí ó quitalo de .bashrc
+
   while true; do
     echo "Elixe unha opción:"
     echo "  (1) Iniciar KDE Plasma (Wayland)"

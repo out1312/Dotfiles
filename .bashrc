@@ -18,6 +18,6 @@ alias icat='kitty icat'
 
 PS1='[\u@\h \W]\$ '
 
-hyfetch
+#hyfetch
 
 eval "$(starship init bash)"

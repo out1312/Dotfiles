@@ -14,11 +14,11 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static const char col_red[]         = "#c53f34";
+static const char col_orange[]         = "#db7218";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_white, col_lblack, col_black },
-	[SchemeSel]  = { col_black, col_red,  col_red  },
+	[SchemeSel]  = { col_black, col_orange,  col_orange  },
 };
 
 /* tagging */
@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_lblack, "-nf", col_white, "-sb", col_red, "-sf", col_black, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_lblack, "-nf", col_white, "-sb", col_orange, "-sf", col_black, NULL };
 
 static const char *termcmd[]  = { "st", NULL };
 
