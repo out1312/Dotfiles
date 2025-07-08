@@ -29,7 +29,9 @@ start_menu() {
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  start_menu
+  #start_menu
+  # Quitada opción de start_menu, inicio de dwm directo
+  startx
 fi
 
 
