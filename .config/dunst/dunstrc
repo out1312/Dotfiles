@@ -348,7 +348,7 @@
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#285577"
+    background = "#056cab"
     foreground = "#ffffff"
     timeout = 10
     override_pause_level = 30
@@ -356,10 +356,10 @@
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#900000"
+    background = "#db7218"
     foreground = "#ffffff"
-    frame_color = "#ff0000"
-    timeout = 0
+    frame_color = "#db7218"
+    timeout = 30
     override_pause_level = 60
     # Icon for notifications with critical urgency
     default_icon = dialog-warning
