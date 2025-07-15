@@ -63,8 +63,6 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_lblack, "-nf", col_white, "-sb", col_orange, "-sf", col_black, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *volumeUp[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
-static const char *volumeDown[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -73,10 +71,10 @@ static const Key keys[] = {
 	{ Mod4Mask,                     XK_p,      spawn,          SHCMD("librewolf") },
 	{ Mod4Mask,                     XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
 	{ Mod4Mask|ShiftMask,           XK_s,      spawn,          SHCMD("flameshot gui") },
-	{ 0,                            XK_F3,     spawn,          { .v = volumeUp } },
-	{ 0,                            XK_F2,     spawn,          { .v = volumeDown } },
 	{ 0,                            XK_F6,     spawn,          SHCMD("screenlight.sh up") },
 	{ 0,                            XK_F5,     spawn,          SHCMD("screenlight.sh down") },
+	{ 0,                            XK_F3,     spawn,          SHCMD("volume.sh up") },
+	{ 0,                            XK_F2,     spawn,          SHCMD("volume.sh down") },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
