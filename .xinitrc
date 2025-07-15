@@ -12,6 +12,7 @@ nm-applet --indicator &
 feh --bg-fill /home/out1312/Pictures/DE.png
 picom -b --config .config/picom/picom.conf
 dwmblocks &
+echo $! > /tmp/dwmblocks.pid
 
 dunst &
 
