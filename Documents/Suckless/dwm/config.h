@@ -70,6 +70,7 @@ static const Key keys[] = {
 	{ Mod4Mask,                     XK_k,      spawn,          SHCMD("kitty") },
 	{ Mod4Mask,                     XK_p,      spawn,          SHCMD("librewolf") },
 	{ Mod4Mask,                     XK_w,      spawn,          SHCMD("networkmanager_dmenu") },
+	{ Mod4Mask,                     XK_d,      spawn,          SHCMD("dolphin") },
 	{ Mod4Mask|ShiftMask,           XK_s,      spawn,          SHCMD("flameshot gui") },
 	{ MODKEY,                       XK_F6,     spawn,          SHCMD("screenlight.sh up") },
 	{ MODKEY,                       XK_F5,     spawn,          SHCMD("screenlight.sh down") },
