@@ -9,4 +9,4 @@ if ! rmpc albumart --output "$ALBUM_ART_PATH"; then
   ALBUM_ART_PATH="$DEFAULT_ALBUM_ART_PATH"
 fi
 
-dunstify -i "$ALBUM_ART_PATH" "Now Playing" "$ARTIST - $TITLE"
+dunstify -i "$ALBUM_ART_PATH" "Now Playing" "\n$ARTIST - $TITLE"
