@@ -14,6 +14,7 @@ picom -b --config .config/picom/picom.conf
 dwmblocks &
 echo $! > /tmp/dwmblocks.pid
 
+flameshot &
 dunst &
 
 mpd
