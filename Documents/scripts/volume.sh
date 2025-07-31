@@ -21,4 +21,4 @@ esac
 
 kill -44 $(cat /tmp/dwmblocks.pid)
 volume=$(get_volume)
-dunstify -t 2000 -h int:value:"$volume" "Volume: $volume%"
+dunstify -u low -t 2000 -h int:value:"$volume" "Volume: $volume%"
