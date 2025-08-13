@@ -10,10 +10,11 @@ rm -rf /home/out1312/Videos/Screencasts/*
 
 [ -n "$(pacman -Qqtd)" ] && pacman -Qqtd | sudo pacman -Rns -
 
-read -p "Eliminar cache de pacman sen usar? " cache
+read -p "Eliminar cache de pacman + yay? " cache
 
 case $cache in
 	[yYsS] ) echo "Eliminando cache:";
-		sudo pacman -Sc;;
+		sudo pacman -Sc
+		yay -Sc;;
 	* ) echo "Non se eliminou o cache.";;
 esac
