@@ -4,9 +4,12 @@ comprobarResiduos.sh
 echo ""
 
 rm -rf /home/out1312/.local/share/Trash/files/*
-rm -ri /home/out1312/Downloads/*
 rm -rf /home/out1312/Pictures/Screenshots/*
 rm -rf /home/out1312/Videos/Screencasts/*
+
+if [[ $(ls /home/out1312/Downloads/ | wc -l) -gt 0 ]]; then
+	rm -ri /home/out1312/Downloads/*
+fi
 
 [ -n "$(pacman -Qqtd)" ] && pacman -Qqtd | sudo pacman -Rns -
 
