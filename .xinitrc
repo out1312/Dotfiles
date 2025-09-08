@@ -5,6 +5,8 @@ xset s off
 /usr/bin/pipewire-pulse &
 /usr/bin/pipewire-media-session &
 
+nm-applet --indicator &
+
 feh --bg-fill /home/out1312/Pictures/DE.png
 picom -b --config .config/picom/picom.conf
 dwmblocks &
