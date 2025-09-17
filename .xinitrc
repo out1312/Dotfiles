@@ -7,8 +7,9 @@ xset s off
 
 nm-applet --indicator &
 
-feh --bg-fill /home/out1312/Pictures/DE.png
+feh --bg-fill $HOME/Pictures/DE.png
 picom -b --config .config/picom/picom.conf
+echo "6600" > $HOME/.config/blugon/current
 dwmblocks &
 echo $! > /tmp/dwmblocks.pid
 
