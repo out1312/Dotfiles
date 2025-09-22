@@ -25,7 +25,8 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
-require'lspconfig'.clangd.setup{}
+vim.lsp.enable('clangd')
+vim.lsp.enable('bashls')
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
