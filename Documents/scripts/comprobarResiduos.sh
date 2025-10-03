@@ -11,7 +11,7 @@ contarArquivos(){
 
 verImaxes(){
   if [[ $(contarArquivos $1) -gt 0 ]] then 
-    kitty icat $1/*
+    kitty icat $1/*.{png,jpg}
   fi
 }
 
