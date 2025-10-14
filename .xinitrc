@@ -18,4 +18,6 @@ dunst &
 
 mpd
 
+systemctl --user import-environment DISPLAY XAUTHORITY
+
 exec dwm
