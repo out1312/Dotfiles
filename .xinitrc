@@ -19,5 +19,6 @@ dunst &
 mpd
 
 systemctl --user import-environment DISPLAY XAUTHORITY
+XDG_MENU_PREFIX=arch- kbuildsycoca6 
 
 exec dwm
