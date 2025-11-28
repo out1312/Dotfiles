@@ -16,8 +16,6 @@ echo $! > /tmp/dwmblocks.pid
 flameshot &
 dunst &
 
-mpd
-
 systemctl --user import-environment DISPLAY XAUTHORITY
 
 exec dwm
