@@ -4,6 +4,7 @@
 
 export PATH="$PATH:/home/out1312/.cargo/bin"
 export PYTHONPATH=$PYTHONPATH:/usr/bin
+export QT_QPA_PLATFORMTHEME=qt6ct
 XDG_MENU_PREFIX=arch- kbuildsycoca6 
 
 #start_menu() {
