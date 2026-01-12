@@ -329,14 +329,6 @@ window-rule {
     default-column-width {}
 }
 
-// Open the Firefox picture-in-picture player as floating by default.
-window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
 
 // Make the wallpaper stationary, rather than moving with workspaces.
 layer-rule {
@@ -344,6 +336,14 @@ layer-rule {
     // Find the right namespace by running niri msg layers.
     match namespace="^noctalia-wallpaper*"
     place-within-backdrop true
+}
+
+// Maximize Firefox by default.
+window-rule {
+    match app-id="librewolf$"
+    match app-id="vesktop$"
+    match app-id="steam$"
+    open-maximized true
 }
 
 // Example: block out two password managers from screen capture.
