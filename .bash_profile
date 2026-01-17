@@ -34,8 +34,6 @@ XDG_MENU_PREFIX=arch- kbuildsycoca6
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   #start_menu
   # Quitada opción de start_menu, inicio de dwm directo
-  cat ~/todo-2.txt
-  sleep 3
   niri
 fi
 
