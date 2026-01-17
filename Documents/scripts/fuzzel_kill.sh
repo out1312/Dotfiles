@@ -16,15 +16,15 @@ selection=$(echo "$process_list" | fuzzel --dmenu --prompt "Kill > " --width=60)
 process=$(awk '{print $3}' <<< "$selection")
 
 if [ -n "$process" ]; then
-    confirm=$(printf "Yes\nNo" | fuzzel --dmenu \
-        --prompt "Kill $process? " \
-        --lines=2 \
-        --width=20 \
-        --inner-pad=5 )
+#    confirm=$(printf "Yes\nNo" | fuzzel --dmenu \
+#        --prompt "Kill $process? " \
+#        --lines=2 \
+#        --width=20 \
+#        --inner-pad=5 )
 
-    if [ "$confirm" = "Yes" ]; then
+    #if [ "$confirm" = "Yes" ]; then
         # Force kill process #idgaf fuck you discord
         killall -9 "$process" 2>/dev/null || true
-    fi
+    #fi
 
 fi
