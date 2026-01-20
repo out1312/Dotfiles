@@ -309,10 +309,10 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // https://yalter.github.io/niri/Configuration:-Animations
 animations {
     // Uncomment to turn off all animations.
-    // off
+    //off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    // slowdown 3.0
+    //slowdown 1.5
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -344,7 +344,7 @@ window-rule {
     match app-id="zen$"
     match app-id="firefox$"
     match app-id="vesktop$"
-    match app-id="steam$"
+    //match app-id="steam$"
     open-maximized true
 }
 
@@ -390,7 +390,7 @@ binds {
     Mod+T hotkey-overlay-title="Randomly change wallpaper" { spawn-sh "randomize-noctalia-wallpaper.sh"; }
 
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Mod+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -i .cache/current-wallpaper.png "; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.

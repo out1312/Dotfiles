@@ -5,7 +5,6 @@
 export PATH="$PATH:/home/out1312/.cargo/bin"
 export PYTHONPATH=$PYTHONPATH:/usr/bin
 export QT_QPA_PLATFORMTHEME=qt6ct
-XDG_MENU_PREFIX=arch- kbuildsycoca6 
 
 #start_menu() {
 #
@@ -34,9 +33,15 @@ XDG_MENU_PREFIX=arch- kbuildsycoca6
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   #start_menu
   # Quitada opción de start_menu, inicio de dwm directo
-  niri
+  export XDG_CURRENT_DESKTOP=sway
+  export XDG_SESSION_DESKTOP=sway
+  #exec dbus-run-session niri
+  #exec niri
+  #exec niri-session
+  dbus-run-session niri --session
 fi
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty2 ]]; then
+  XDG_MENU_PREFIX=arch- kbuildsycoca6 
   startx
 fi
