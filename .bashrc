@@ -13,6 +13,7 @@ alias vi='nvim'
 alias cat='bat'
 alias wisdom='fortune | cowsay'
 alias lw='librewolf '
+alias zn='zen-browser '
 alias icat='kitty icat'
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
