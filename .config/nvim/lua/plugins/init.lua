@@ -70,11 +70,13 @@ return {
       })
     end
   },
+
   {
     'dgagn/diagflow.nvim',
     -- event = 'LspAttach', -- This is what I use personnally and it works great
     opts = {}
   },
+
   { "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
