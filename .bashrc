@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export LS_COLORS="${LS_COLORS}ow=1;97;0:"
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias sudo='sudo '
