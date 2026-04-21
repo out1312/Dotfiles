@@ -1,0 +1,61 @@
+PROGRAMAS E SCRIPTS INSTALADOS:
+
+Programas e utilidades:
+  - yay: AUR helper
+  - dua-cli: Analizador de espazo de disco
+  - locate: Buscador de arquivos na base de datos preconstruida (updatedb)
+  - btop / htop: Monitores de recursos
+  - radare2: Hex editor (para 0DE5)
+  - gcc/g++: Compiladores de C / C++
+  - (R) spotify-tui: Text UI para Spotify
+  - keepalive: Para evitar sleep en KDE
+  - timeshift: Sincronizador de arquivos con rsync
+  - vorta: Copia de seguridade con borg
+  - tldr (tealdeer): Resumo de programas
+  - wikiman: ArchWiki offline (usa o paquete arch-wiki-docs)
+  - okular: Visor de documentos pdf / postscript
+  - flameshot: Tomador de capturas en X11
+  - dunst: Xestor de notificacións (necesario para flameshot)
+  - imagemagick: Transformador de imaxes mediante terminal
+  - haruna: Reprodutor de video
+  - strawberry: Reprodutor de audio
+  - ncspot: Reprodutor de spotify
+  - cronie: Xestor de cron jobs
+  - krita: KDE image editor
+  - networkmanager-dmenu: NetworkManager en dmenu
+  - soulseekqt: Programa P2P para compartir música
+  - mpd: Daemon reprodutor de música
+  - rmpc: Cliente de mpd para consola
+  - mpc: Cliente de consola para mpd
+  - rpi-imager: Creador de imaxes para RPI
+  - pcsx2: Emulador de PS2
+  - bat: Clon de cat con resalto de sintaxe
+  - Trenchbroom: Editor de mapas de quake
+  - python-pip: Administrador de paquetes de python
+  - yt-dlp: Descargador de videos de Youtube (etc.)
+  - LibreOffice: Software múltiple de ofimática
+  - shellcheck-bin e bash-language-server: LSP de bash para Nvim
+  - (REMOVED) subtitleedit: Creador e editor de subtítulos
+  - logseq: FOSS Obsidian
+  - nicotine: Cliente gráfico para SoulSeek
+  - swi-prolog (swipl): compilador de prolog
+  - yazi: Explorador de arquivos en consola
+  - wf-recorder: Grabador de pantalla en Wayland
+  - tree: Visualizador de árbore de arquivos
+  - jpegoptim: Optimizador de imaxes JPEG
+  - manuskript: Editor de historias narrativas
+  - kid3: Editor de metadata para álbumes
+  - navidrome: Servidor de música
+  - eden: Emulador de Switch
+
+Scripts:
+  - programas.sh: Devolve un cat deste arquivo por pantalla
+  - jellyfin.sh: Lanza o servidor de jellyfin
+  - pipes.sh: Barra ricing
+  - comprobarResiduos.sh: Devolve o número de arquivos en carpeta que deberían estar baleiras
+  - limparArquivos.sh: Pide eliminar os arquivos de comprobarResiduos.sh, xunto a paquetes orfos e ó cache de pacman
+  - convertirImaxes128x128.sh: Convirte todas as imaxes en todos os subdirectorios da carpeta seleccionada a 128x128
+  - dmenu_kill.sh: Usa dmenu para elexir un programa ó que facer kill
+  - dmenu_cine.sh: Usa dmenu para elexir comando de cine / ferris.
+  - rmpc_notification.sh: Notificación de rmpc (cambio de canción)
+  - volume.sh e screenlight.sh: Cambio de volume/brillo
