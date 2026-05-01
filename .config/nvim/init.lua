@@ -36,7 +36,8 @@ require "options"
 require "nvchad.autocmds"
 require('diagflow').setup()
 
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "catppuccin-macchiato"
+
 
 vim.wo.relativenumber = true
 
