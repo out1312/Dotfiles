@@ -47,6 +47,7 @@ Programas e utilidades:
   - kid3: Editor de metadata para álbumes
   - navidrome: Servidor de música
   - eden: Emulador de Switch
+  - gpick: Color picker para imaxes
 
 Scripts:
   - programas.sh: Devolve un cat deste arquivo por pantalla
