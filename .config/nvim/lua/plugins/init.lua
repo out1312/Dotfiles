@@ -82,6 +82,22 @@ return {
     priority = 1000,
   },
 
+  {
+    "mason-org/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "tinymist",
+      },
+    }
+  },
+
+  {
+    'chomosuke/typst-preview.nvim',
+    lazy = false, -- or ft = 'typst'
+    version = '1.*',
+    opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+  },
+
   -- {
   --   "simrat39/rust-tools.nvim",
   --   dependencies = { "neovim/nvim-lspconfig" },

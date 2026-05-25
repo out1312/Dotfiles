@@ -48,6 +48,7 @@ Programas e utilidades:
   - navidrome: Servidor de música
   - eden: Emulador de Switch
   - gpick: Color picker para imaxes
+  - gurk: Cliente de signal para terminal
 
 Scripts:
   - programas.sh: Devolve un cat deste arquivo por pantalla
