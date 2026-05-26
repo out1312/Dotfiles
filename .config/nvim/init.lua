@@ -27,6 +27,7 @@ require("lazy").setup({
 
 vim.lsp.enable('clangd')
 vim.lsp.enable('bashls')
+vim.lsp.enable('tinymist')
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
@@ -55,4 +56,18 @@ vim.keymap.set("n", "<leader><leader>", function()
         virtual_text = isLspDiagnosticsVisible,
         underline = isLspDiagnosticsVisible
     }) end)
+
+vim.lsp.config["tinymist"] = {
+
+    cmd = { "tinymist" },
+
+    filetypes = { "typst" },
+
+    settings = {
+
+        -- ...
+
+    }
+
+}
 
