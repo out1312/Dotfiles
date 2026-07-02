@@ -28,6 +28,7 @@ require("lazy").setup({
 vim.lsp.enable('clangd')
 vim.lsp.enable('bashls')
 vim.lsp.enable('tinymist')
+vim.lsp.enable('prolog_ls')
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
@@ -38,7 +39,6 @@ require "nvchad.autocmds"
 require('diagflow').setup()
 
 vim.cmd.colorscheme "catppuccin-macchiato"
-
 
 vim.wo.relativenumber = true
 
@@ -58,16 +58,7 @@ vim.keymap.set("n", "<leader><leader>", function()
     }) end)
 
 vim.lsp.config["tinymist"] = {
-
     cmd = { "tinymist" },
-
     filetypes = { "typst" },
-
-    settings = {
-
-        -- ...
-
-    }
-
+    settings = {}
 }
-
