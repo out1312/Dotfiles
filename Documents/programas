@@ -35,7 +35,7 @@ Programas e utilidades:
   - yt-dlp: Descargador de videos de Youtube (etc.)
   - LibreOffice: Software múltiple de ofimática
   - shellcheck-bin e bash-language-server: LSP de bash para Nvim
-  - (REMOVED) subtitleedit: Creador e editor de subtítulos
+  - (R) subtitleedit: Creador e editor de subtítulos
   - logseq: FOSS Obsidian
   - nicotine: Cliente gráfico para SoulSeek
   - swi-prolog (swipl): compilador de prolog
@@ -49,6 +49,9 @@ Programas e utilidades:
   - gpick: Color picker para imaxes
   - gurk: Cliente de signal para terminal
   - drawio-desktop: Draw.io para escritorio
+  - archiso: Creador de live ISOs de Arch
+    - DEP: qemu-desktop
+    - DEP: edk2-ovmf
 
 Scripts:
   - programas.sh: Devolve un cat deste arquivo por pantalla
