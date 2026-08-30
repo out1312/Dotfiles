@@ -279,7 +279,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 //spawn-at-startup "waybar"
-spawn-sh-at-startup "qs -c noctalia-shell"
+spawn-sh-at-startup "noctalia"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -640,4 +640,5 @@ binds {
     // moving the mouse or pressing any other key.
     //Mod+Shift+P { power-off-monitors; }
 }
-include "./noctalia.kdl"
+
+include "noctalia.kdl"

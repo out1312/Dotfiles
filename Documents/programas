@@ -52,6 +52,7 @@ Programas e utilidades:
   - archiso: Creador de live ISOs de Arch
     - DEP: qemu-desktop
     - DEP: edk2-ovmf
+  - magic-wormhole: Para enviar arquivos encriptados
 
 Scripts:
   - programas.sh: Devolve un cat deste arquivo por pantalla
