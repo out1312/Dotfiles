@@ -53,6 +53,7 @@ Programas e utilidades:
     - DEP: qemu-desktop
     - DEP: edk2-ovmf
   - magic-wormhole: Para enviar arquivos encriptados
+  - qpwgraph: Conectar varios outputs de audio a aplicacións (PipeWire)
 
 Scripts:
   - programas.sh: Devolve un cat deste arquivo por pantalla
