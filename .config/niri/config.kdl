@@ -389,7 +389,8 @@ binds {
     Mod+Shift+P hotkey-overlay-title="Run an Application: Zen Browser" { spawn-sh "zen-browser"; }
     // Mod+T hotkey-overlay-title="Randomly change wallpaper" { spawn-sh "randomize-noctalia-wallpaper.sh"; }
 
-    Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    //Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+P hotkey-overlay-title="Run an Application: Noctalia app launcher " {  spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "swaylock -i .cache/current-wallpaper.png "; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
