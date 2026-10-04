@@ -35,10 +35,10 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   # Quitada opción de start_menu, inicio de dwm directo
   export XDG_CURRENT_DESKTOP=sway
   export XDG_SESSION_DESKTOP=sway
-  #exec dbus-run-session niri
-  #exec niri
+  exec niri
   #exec niri-session
-  dbus-run-session niri --session
+  #exec dbus-run-session niri
+  #dbus-run-session niri --session esta funcionaba
 fi
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty2 ]]; then
